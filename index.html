@@ -9,7 +9,7 @@
       const params = new URLSearchParams(window.location.search);
       const redirectPath = params.get("p");
       if (redirectPath) {
-        history.replaceState(null, null, redirectPath);
+        history.replaceState(null, '/', redirectPath);
       }
     </script>
     <script type="module" crossorigin src="/front_5th_chapter1-2/assets/index-52aExfse.js"></script>

@@ -7,7 +7,8 @@
       const search = window.location.search || "";
       const hash = window.location.hash || "";
 
-      const url = `/front_5th_chapter1-2/?p=${pathname}${search}${hash}`;
+      const path = pathname.startsWith("/") ? pathname.substring(1) : pathname;
+      const url = `/front_5th_chapter1-2/?redirectPath=${path}${search}${hash}`;
 
       window.location.replace(url);
     </script>
