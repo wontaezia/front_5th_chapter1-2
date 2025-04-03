@@ -8,6 +8,7 @@
     <script>
       const params = new URLSearchParams(window.location.search);
       const redirectPath = params.get("p");
+      alert(redirectPath)
       if (redirectPath) {
         history.replaceState(null, null, redirectPath);
       }
